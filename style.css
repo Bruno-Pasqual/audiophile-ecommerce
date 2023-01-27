@@ -20,24 +20,91 @@ body {
 /* todo == NAVBAR ====================== */
 
 nav {
-  width: 327px;
-  height: 25px;
-  background: blue;
+  width: 375px;
+  height: 58px;
   margin: 32px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  padding: 0 24px;
+  margin-bottom: 108px;
 }
 
+#container_lado_esquerdo {
+  width: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_mobile {
+  width: 16px;
+  height: 15px;
+  outline: 1px solid red;
+  position: relative;
+}
+
+/* ! Animação menu ---------------------------------------------------- */
+
 .menu_bar {
+  position: absolute;
   width: 16px;
   height: 3px;
   background: white;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.menu_bar::after,
+.menu_bar::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background: white;
+  transform: translateY(6px);
+  transition: all 0.5s;
 }
 
-/* ! Media querie =========================================== */
-
-@media (min-width: 768px) {
+.menu_bar::before {
+  transform: translateY(-6px);
+}
+.menu_bar::after.ativo {
+  transform: translateY(6px);
 }
 
-/* todo ========================================================= */
+/* Animação */
 
-@media (min-width: 768px) {
-} ;
+.menu_bar.ativo {
+  background: #101010;
+}
+
+.menu_bar.ativo::after {
+  animation: barra2-menu 1.5s forwards;
+}
+.menu_bar.ativo::before {
+  animation: avanca-primeira-barra 1.5s forwards;
+}
+
+@keyframes avanca-primeira-barra {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: rotate(-45deg);
+  }
+}
+@keyframes barra2-menu {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: rotate(45deg);
+  }
+}
+
+/* ---  */
