@@ -13,7 +13,6 @@
 body {
   margin: 0 auto;
   width: 375px;
-  border: 1px solid red;
   background: #101010;
 }
 
@@ -28,7 +27,6 @@ nav {
   align-items: flex-start;
   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
   padding: 0 24px;
-  margin-bottom: 108px;
 }
 
 #container_lado_esquerdo {
@@ -41,7 +39,6 @@ nav {
 .menu_mobile {
   width: 16px;
   height: 15px;
-  outline: 1px solid red;
   position: relative;
 }
 
@@ -107,4 +104,89 @@ nav {
   }
 }
 
-/* ---  */
+/* ! Header--------------------------- */
+header {
+  height: calc(600px - 90px);
+  /* background: #191919; */
+  display: grid;
+  place-content: center;
+}
+
+header > * {
+  text-align: center;
+}
+
+.caixa_de_informacoes {
+  width: 328px;
+  height: 290px;
+  margin-bottom: 40px;
+}
+
+.new_product {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.nome_produto {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  margin-bottom: 24px;
+}
+
+.descricao_produto {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 28px;
+}
+
+.botao_ver_produto_laranja {
+  width: 160px;
+  height: 48px;
+  border: none;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background: #d87d4a;
+}
+
+picture {
+  width: 100%;
+  max-width: 375px;
+  border: 1px solid blue;
+  height: calc(600px - 90px);
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+}
+
+picture img {
+  width: 100%;
+}
+
+/* !Primeiros produtos container ------------------------------------ */
+
+main {
+  background: white;
+}
+
+#primeiros_produtos {
+  width: 327px;
+  height: 683px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
