@@ -182,11 +182,22 @@ picture img {
 
 main {
   background: white;
+  padding: 30px 0;
 }
 
-#primeiros_produtos {
+#primeiros_produtos_container {
   width: 327px;
   height: 683px;
-  border: 1px solid red;
   margin: 0 auto;
+  outline: 1px solid lightcoral;
+  padding-top: 52px;
+  display: grid;
+  row-gap: 68px;
+}
+
+.primeiro_produto_card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  width: 327px;
+  height: 165px;
 }
