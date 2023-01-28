@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  color: white;
+}
+
+/* !começo ============================================= */
+
+body {
+  margin: 0 auto;
+  width: 375px;
+  background: #101010;
+}
+
+/* todo == NAVBAR ====================== */
+
+nav {
+  width: 375px;
+  height: 58px;
+  margin: 32px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  padding: 0 24px;
+}
+
+#container_lado_esquerdo {
+  width: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_mobile {
+  width: 16px;
+  height: 15px;
+  position: relative;
+}
+
+/* ! Animação menu ---------------------------------------------------- */
+
+.menu_bar {
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background: white;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.menu_bar::after,
+.menu_bar::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background: white;
+  transform: translateY(6px);
+  transition: all 0.5s;
+}
+
+.menu_bar::before {
+  transform: translateY(-6px);
+}
+.menu_bar::after.ativo {
+  transform: translateY(6px);
+}
+
+/* Animação */
+
+.menu_bar.ativo {
+  background: #101010;
+}
+
+.menu_bar.ativo::after {
+  animation: barra2-menu 1.5s forwards;
+}
+.menu_bar.ativo::before {
+  animation: avanca-primeira-barra 1.5s forwards;
+}
+
+@keyframes avanca-primeira-barra {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: rotate(-45deg);
+  }
+}
+@keyframes barra2-menu {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: rotate(45deg);
+  }
+}
+
+/* ! Header--------------------------- */
+header {
+  height: calc(600px - 90px);
+  /* background: #191919; */
+  display: grid;
+  place-content: center;
+}
+
+header > * {
+  text-align: center;
+}
+
+.caixa_de_informacoes {
+  width: 328px;
+  height: 290px;
+  margin-bottom: 40px;
+}
+
+.new_product {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.nome_produto {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  margin-bottom: 24px;
+}
+
+.descricao_produto {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 28px;
+}
+
+.botao_ver_produto_laranja {
+  width: 160px;
+  height: 48px;
+  border: none;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background: #d87d4a;
+}
+
+picture {
+  width: 100%;
+  max-width: 375px;
+  height: calc(600px - 90px);
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+}
+
+picture img {
+  width: 100%;
+}
+
+/* !Primeiros produtos container ------------------------------------ */
+
+main {
+  background: white;
+  padding: 30px 0;
+}
+
+#primeiros_produtos_container {
+  width: 327px;
+  height: 683px;
+  margin: 0 auto;
+  /* outline: 1px solid lightcoral; */
+  padding-top: 52px;
+  display: grid;
+  row-gap: 68px;
+}
+
+.primeiro_produto_card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  width: 327px;
+  height: 165px;
+  position: relative;
+}
+
+.product_img {
+  height: 104px;
+  width: 80px;
+  border: 1px solid lightcoral;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.product_class {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 1.07143px;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+
+a {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #000000;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.primeiro_produto_card {
+  display: grid;
+  place-content: center;
+}
+
+.link_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 13.32px;
+  margin-top: 17px;
+}
+
+/* ! ZX9 speaker ----------------------------------- */
+
+.zx9_container {
+  width: 327px;
+  height: 600px;
+  margin-top: 120px;
+  margin: 120px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #d87d4a;
+  border-radius: 8px;
+}
+
+.zx9_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  margin: 32px 0 24px 0;
+}
+
+.zx9_img {
+  margin: 55px auto 0 auto;
+  width: 172px;
+  height: 207px;
+}
+
+.product_details {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.see_product_zx9 {
+  background: #000000;
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin: 39px auto 0 auto;
+}
+
+/* ! ZX7 CONTAINER ------------------------------------  *
+

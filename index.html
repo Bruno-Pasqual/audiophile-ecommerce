@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -14,36 +15,108 @@
     <title>Frontend Mentor | Audiophile e-commerce website</title>
   </head>
   <body>
-    <nav></nav>
-    Home Headphones Speakers Earphones
+    <nav>
+      <div id="container_lado_esquerdo">
+        <div class="menu_mobile">
+          <div class="menu_bar"></div>
+        </div>
+        <img src="./assets/shared/desktop/logo.svg" alt="" id="logo" />
+      </div>
 
-    <!--   New product
-  XX99 Mark II Headphones
-  Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast. -->
+      <img
+        src="./assets/shared/desktop/icon-cart.svg"
+        alt=""
+        id="carrinho_compra"
+      />
+    </nav>
+    <header>
+      <picture>
+        <img src="./assets/home/mobile/image-header.jpg" alt="" />
+      </picture>
+      <div class="caixa_de_informacoes">
+        <p class="new_product">NEW PRODUCT</p>
+        <h2 class="nome_produto">XX9 MARK ⅠⅠ<br />HEADPHONES</h2>
+        <p class="descricao_produto">
+          Experience natural, lifelike audio and exceptional build quality made
+          for the passionate music enthusiast
+        </p>
+        <button class="botao_ver_produto_laranja">SEE PRODUCT</button>
+      </div>
+    </header>
+    <main>
+      <section id="primeiros_produtos_container">
+        <!-- aaaaaaaa -->
+        <div class="primeiro_produto_card">
+          <div class="product_img speakers_container"></div>
+          <p class="product_class">Headphones</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- aaaaaaaa -->
+        <!-- aaaaaaaa -->
+        <div class="primeiro_produto_card">
+          <div class="product_img speakers_container"></div>
+          <p class="product_class">SPEAKERS</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- aaaaaaaa -->
+        <!-- aaaaaaaa -->
+        <div class="primeiro_produto_card">
+          <div class="product_img speakers_container"></div>
+          <p class="product_class">EARPHONES</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- aaaaaaaa -->
+      </section>
+      <section class="zx9_container">
+        <img
+          class="zx9_img"
+          src="./assets/home/mobile/image-speaker-zx9.png"
+          alt=""
+        />
+        <p class="zx9_title">ZX9<br />SPEAKER</p>
+        <p class="product_details">
+          Upgrade to premium speakers that are phenomenally built to deliver
+          truly remarkable sound.
+        </p>
+        <button class="see_product_zx9">SEE PRODUCT</button>
+      </section>
+    </main>
 
-    <!-- See product
-
-  Headphones
-  Shop
-
-  Speakers
-  Shop
-
-  Earphones
-  Shop
- -->
-    ZX9 speaker Upgrade to premium speakers that are phenomenally built to
-    deliver truly remarkable sound. See product ZX7 speaker See product YX1
-    earphones See product Bringing you the best audio gear Located at the heart
-    of New York City, Audiophile is the premier store for high end headphones,
-    earphones, speakers, and audio accessories. We have a large showroom and
-    luxury demonstration rooms available for you to browse and experience a wide
-    range of our products. Stop by our store to meet some of the fantastic
-    people who make Audiophile the best place to buy your portable audio
-    equipment. Home Headphones Speakers Earphones Audiophile is an all in one
-    stop to fulfill your audio needs. We're a small team of music lovers and
+    <!-- Home Headphones Speakers Earphones New product XX99 Mark II Headphones
+    Experience natural, lifelike audio and exceptional build quality made for
+    the passionate music enthusiast. See product Headphones Shop Speakers Shop
+    Earphones Shop ZX9 speaker Upgrade to premium speakers that are phenomenally
+    built to deliver truly remarkable sound. See product ZX7 speaker See product
+    YX1 earphones See product Bringing you the best audio gear Located at the
+    heart of New York City, Audiophile is the premier store for high end
+    headphones, earphones, speakers, and audio accessories. We have a large
+    showroom and luxury demonstration rooms available for you to browse and
+    experience a wide range of our products. Stop by our store to meet some of
+    the fantastic people who make Audiophile the best place to buy your portable
+    audio equipment. Home Headphones Speakers Earphones Audiophile is an all in
+    one stop to fulfill your audio needs. We're a small team of music lovers and
     sound specialists who are devoted to helping you get the most out of
     personal audio. Come and visit our demo facility - we’re open 7 days a week.
-    Copyright 2021. All Rights Reserved
+    Copyright 2021. All Rights Reserved -->
+
+    <script src="./script.js"></script>
   </body>
 </html>
