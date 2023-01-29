@@ -106,11 +106,13 @@ nav {
 
 /* ! Header--------------------------- */
 header {
-  height: calc(600px - 90px);
-  /* background: #191919; */
+  height: calc(600px);
   display: grid;
   place-content: center;
-  border: 1px solid red;
+  background-image: url('./assets//home//mobile/image-header.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
 
 header > * {
@@ -178,20 +180,6 @@ header > * {
   color: black;
 }
 
-header picture {
-  width: 100%;
-  max-width: 375px;
-  height: calc(600px - 90px);
-  position: absolute;
-  z-index: -1;
-  top: -10px;
-}
-
-picture img {
-  width: 100%;
-  border-radius: 8px;
-}
-
 /* !Primeiros produtos container ------------------------------------ */
 
 main {
@@ -211,6 +199,7 @@ main {
 
 .primeiro_produto_card {
   background: #f1f1f1;
+
   border-radius: 8px;
   width: 327px;
   height: 165px;
@@ -329,15 +318,6 @@ a {
   left: 24px;
 }
 
-.zx7_container picture {
-  width: 100%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 8px;
-}
-
 .zx7_container .botao_ver_produto {
   position: absolute;
   z-index: 1;
@@ -449,8 +429,41 @@ li a {
   column-gap: 16px;
 }
 
+/* ! ================== Media queries ============================ */
+
 @media (min-width: 768px) {
   body {
     width: 768px;
   }
+
+  /* todo --------- Header  */
+  header {
+    height: 729px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .caixa_de_informacoes {
+    margin-bottom: -50px;
+  }
+}
+
+@media (min-width: 1445px) {
+  body {
+    width: 1440px;
+  }
+
+  header {
+    background-position-y: -50px;
+  }
+
+  .caixa_de_informacoes {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 300px;
+    text-align: left;
+  }
+
+  /* todo == Header -------------- */
 } ;
