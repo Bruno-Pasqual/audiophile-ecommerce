@@ -13,7 +13,7 @@
 body {
   margin: 0 auto;
   width: 375px;
-  background: #101010;
+  background: #191919;
 }
 
 /* todo == NAVBAR ====================== */
@@ -298,9 +298,11 @@ a {
   width: 327px;
   height: 320px;
   margin: 24px auto;
-  border: 1px solid black;
   position: relative;
   border-radius: 8px;
+  background-image: url('./assets/home/mobile/image-speaker-zx7.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .product_name {
@@ -330,9 +332,24 @@ a {
   width: 327px;
   height: 424px;
   margin: 24px auto;
-  border: 1px solid red;
   display: grid;
   /* row-gap: 24px; */
+}
+
+.product_img_container {
+  width: 327px;
+  height: 200px;
+  background-image: url('./assets//home/mobile/image-earphones-yx1.jpg');
+  background-position: center;
+  background-size: cover;
+  /* background: #f1f1f1; */
+  border-radius: 8px;
+}
+
+.yx1_details_container {
+  padding-top: 41px;
+  background: #f1f1f1;
+  border-radius: 8px;
 }
 
 .yx1_container .product_name {
@@ -347,7 +364,6 @@ a {
 .container_propaganda {
   width: 327px;
   height: 698px;
-  border: 1px solid red;
   margin: 96px auto 0 auto;
 }
 
@@ -359,6 +375,15 @@ a {
   letter-spacing: 1px;
   color: #000000;
   margin-top: 40px;
+}
+
+.imagem_propaganda_container {
+  width: 327px;
+  height: 300px;
+  border-radius: 8px;
+  background-image: url('./assets/shared/mobile/image-best-gear.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .texto-destaque {
@@ -437,6 +462,7 @@ li a {
   }
 
   /* todo --------- Header  */
+
   header {
     height: 729px;
     background-repeat: no-repeat;
@@ -446,7 +472,29 @@ li a {
   .caixa_de_informacoes {
     margin-bottom: -50px;
   }
+
+  /* todo --------- Nav */
+  nav {
+    width: 729px;
+  }
+
+  .menu_mobile {
+    display: block;
+  }
+
+  /* todo ----------- Container propaganda */
+  .container_propaganda {
+    width: 689px;
+    height: 633px;
+  }
+
+  .imagem_propaganda_container {
+    width: 689px;
+    height: 300px;
+  }
 }
+
+/* ! ================== Media queries ============================ */
 
 @media (min-width: 1445px) {
   body {
@@ -457,11 +505,29 @@ li a {
     background-position-y: -50px;
   }
 
+  nav {
+    width: 1445px;
+  }
+
+  .menu_mobile {
+    display: none;
+  }
+
   .caixa_de_informacoes {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 300px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nome_produto {
+    text-align: left;
+  }
+
+  .descricao_produto {
     text-align: left;
   }
 
