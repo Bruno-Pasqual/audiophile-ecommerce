@@ -1,9 +1,5 @@
 /* import ajustaImagens from './functions.js'; */
 
-console.log('eai');
-
-const headerContainer = document.getElementById('header');
-
 // console.log(headerContainer.offsetWidth);
 
 window.addEventListener('resize', () => {
@@ -24,9 +20,9 @@ function funcaoInicial() {
 //todo -- Funções para fazer a troca das imagens
 
 function ajustaImagens(largura) {
-  console.log('funcao exportada');
   ajustaImagemHeader(largura);
   ajustaImagensProdutos(largura);
+  trocaImagens(largura);
 }
 
 function ajustaImagemHeader(largura) {
@@ -49,4 +45,17 @@ function ajustaImagensProdutos(largura) {
     : largura >= 1440
     ? (zx9Image.src = `/assets/home/desktop/image-speaker-zx9.png`)
     : '';
+}
+
+function trocaImagens(largura) {
+  let containerPropaganda = document.querySelector(
+    '.imagem_propaganda_container'
+  );
+  if (largura < 768) {
+    containerPropaganda.style.backgroundImage = `/assets/shared/mobile/image-best-gear.jpg`;
+  } else if (largura >= 768 && largura < 1440) {
+    containerPropaganda.style.backgroundImage = `/assets/shared/tablet/image-best-gear.jpg`;
+  } else if (largura >= 1440) {
+    containerPropaganda.style.backgroundImage = `/assets/shared/desktop/image-best-gear.jpg`;
+  }
 }
