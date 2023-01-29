@@ -153,7 +153,7 @@ header > * {
   margin-bottom: 28px;
 }
 
-.botao_ver_produto_laranja {
+.botao_ver_produto {
   width: 160px;
   height: 48px;
   border: none;
@@ -161,10 +161,23 @@ header > * {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1px;
+  border: 1px solid black;
+}
+
+.laranja {
   background: #d87d4a;
 }
 
-picture {
+.preto {
+  background: #000000;
+  border: 1px solid #000000;
+}
+
+.sem_fundo {
+  color: black;
+}
+
+header picture {
   width: 100%;
   max-width: 375px;
   height: calc(600px - 90px);
@@ -175,6 +188,7 @@ picture {
 
 picture img {
   width: 100%;
+  border-radius: 8px;
 }
 
 /* !Primeiros produtos container ------------------------------------ */
@@ -284,16 +298,114 @@ a {
   margin: 0 auto;
 }
 
-.see_product_zx9 {
-  background: #000000;
-  width: 160px;
-  height: 48px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 1px;
+.zx9_container .botao_ver_produto {
   margin: 39px auto 0 auto;
 }
 
-/* ! ZX7 CONTAINER ------------------------------------  *
+/* ! zx7 container --------------------------------------------------- */
 
+.zx7_container {
+  width: 327px;
+  height: 320px;
+  margin: 24px auto;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 8px;
+}
+
+.product_name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.zx7_container .product_name {
+  position: absolute;
+  z-index: 1;
+  top: 101px;
+  left: 24px;
+}
+
+.zx7_container picture {
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+}
+
+.zx7_container .botao_ver_produto {
+  position: absolute;
+  z-index: 1;
+  top: 171px;
+  left: 25.5px;
+}
+
+/* ! YX1 container ----------------------------------------------- */
+.yx1_container {
+  width: 327px;
+  height: 424px;
+  margin: 24px auto;
+  border: 1px solid red;
+  display: grid;
+  /* row-gap: 24px; */
+}
+
+.yx1_container .product_name {
+  margin-left: 24px;
+}
+
+.yx1_container .botao_ver_produto {
+  margin: 32px 0 0 25.5px;
+}
+
+/* ! container_propaganda -------------------------------------- */
+.container_propaganda {
+  width: 327px;
+  height: 698px;
+  border: 1px solid red;
+  margin: 96px auto 0 auto;
+}
+
+.container_title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.texto-destaque {
+  color: #d87d4a;
+}
+
+.text_propaganda {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+  margin-top: 32px;
+}
+
+/* !Footer ----------------------------------------------------- */
+
+.footer_text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
