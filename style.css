@@ -165,11 +165,9 @@ header > * {
   width: 160px;
   height: 48px;
   border: none;
-  font-family: 'Manrope';
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1px;
-  border: 1px solid black;
 }
 
 .laranja {
@@ -214,7 +212,6 @@ main {
 .product_img {
   height: 104px;
   width: 80px;
-  border: 1px solid lightcoral;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -253,8 +250,20 @@ a {
   margin-top: 17px;
 }
 
+.product_img.headphones {
+  background-image: url('./assets/noBackground/x99_mobile.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .product_img.speakers_container {
-  background-image: url('./assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg');
+  background-image: url('./assets/noBackground/speaker_mobile.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.product_img.earphones {
+  background-image: url('./assets/noBackground/yx1_mobile.png');
   background-position: center;
   background-size: cover;
 }
@@ -302,7 +311,6 @@ a {
   line-height: 25px;
   text-align: center;
   color: #ffffff;
-  mix-blend-mode: normal;
   opacity: 0.75;
   width: 280px;
   margin: 0 auto;
@@ -479,6 +487,64 @@ li a {
   column-gap: 16px;
 }
 
+/* ! ========================= Headphones page ============================= */
+
+.container_produtos_categoria {
+  width: 327px;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 120px;
+}
+.new_product_tag {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #d87d4a;
+  margin-bottom: 24px;
+}
+
+.produto_category_name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.category_details_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category_product_details {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+
+/* Container imagem */
+
+.category_img_container {
+  width: 327px;
+  height: 352px;
+  background-image: url('./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 32px;
+  /* background: #f1f1f1; */
+  border-radius: 8px;
+}
+
 /* ! ================== Media queries ============================ */
 
 @media (min-width: 768px) {
@@ -519,6 +585,18 @@ li a {
   .primeiro_produto_card {
     width: 223px;
     height: 165px;
+  }
+
+  .product_img.headphones {
+    background-image: url('./assets/noBackground/x99_tablet.png');
+  }
+
+  .product_img.speakers_container {
+    background-image: url('./assets/noBackground/speaker_tablet.png');
+  }
+
+  .product_img.earphones {
+    background-image: url('./assets/noBackground/yx1_tablet.png');
   }
 
   /* todo ----------------------- ZX9 speaker */
@@ -684,6 +762,23 @@ li a {
 
   .product_class {
     font-size: 18px;
+  }
+
+  .product_img {
+    width: 122.95px;
+    height: 160px;
+  }
+
+  .product_img.headphones {
+    background-image: url('./assets/noBackground/x99_tablet.png');
+  }
+
+  .product_img.speakers_container {
+    background-image: url('./assets/noBackground/speaker_tablet.png');
+  }
+
+  .product_img.earphones {
+    background-image: url('./assets/noBackground/yx1_tablet.png');
   }
 
   /* todo ----------------------- ZX9 speaker */
