@@ -493,6 +493,10 @@ li a {
   background: #191919;
 }
 
+.category_card_container {
+  width: 327px;
+}
+
 .category_title {
   font-weight: 700;
   font-size: 28px;
@@ -501,13 +505,14 @@ li a {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 32px;
+  margin: 32px 0;
 }
 
 .container_produtos_categoria {
   width: 327px;
   margin: 64px auto 120px auto;
   display: grid;
+  place-content: center;
   row-gap: 120px;
 }
 .new_product_tag {
@@ -616,14 +621,20 @@ li a {
 
   .product_img.headphones {
     background-image: url('./assets/noBackground/x99_tablet.png');
+    background-size: cover;
+    background-position: center;
   }
 
   .product_img.speakers_container {
     background-image: url('./assets/noBackground/speaker_tablet.png');
+    background-size: cover;
+    background-position: center;
   }
 
   .product_img.earphones {
     background-image: url('./assets/noBackground/yx1_tablet.png');
+    background-size: cover;
+    background-position: center;
   }
 
   /* todo ----------------------- ZX9 speaker */
@@ -733,6 +744,34 @@ li a {
     position: absolute;
     bottom: 46px;
     right: 40px;
+  }
+
+  /* ! headphones page ===================================================== */
+
+  .category_card_container {
+    width: 689px;
+  }
+
+  .pai_imagem_category {
+    display: grid;
+    place-content: center;
+    width: 689px;
+    height: 352px;
+    margin-bottom: 52px;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  .category_title {
+    margin: 105px 0 97px 0;
+    font-size: 40px;
+    letter-spacing: 1.42857px;
+  }
+
+  .category_img_container {
+    width: 215.74px;
+    height: 225px;
+    position: relative;
   }
 
   /* Imagens headphones container  */
@@ -975,6 +1014,44 @@ li a {
   }
 
   /* ! headphones page ================================================= */
+
+  .container_produtos_categoria {
+    width: 1110px;
+    border: 1px solid blue;
+    /* height: 560px; */
+  }
+
+  .category_card_container {
+    display: flex;
+    width: 1110px;
+
+    align-items: center;
+    column-gap: 220px;
+  }
+
+  .category_details_container {
+    width: 445px;
+    height: 343px;
+  }
+
+  .pai_imagem_category {
+    width: 540px;
+    height: 560px;
+  }
+
+  .category_img_container {
+    width: 349px;
+    height: 386px;
+  }
+
+  /* Alterando as fontes */
+
+  .category_title {
+    margin: 96px 0;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+  }
 
   /* Imagens headphones container  */
   .category_img_container.xx59-headphones {

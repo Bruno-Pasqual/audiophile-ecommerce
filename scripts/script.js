@@ -23,7 +23,8 @@ function criaCardsCategory(category) {
   dados.map((objeto) => {
     if (objeto.category === category) {
       containerPai.innerHTML += `   <div class="category_card_container">
-      <div class="category_img_container ${objeto.slug}"></div>
+      <div class="pai_imagem_category">
+      <div class="category_img_container ${objeto.slug}"></div></div>
       <div class="category_details_container">
         ${objeto.new ? '<p class="new_product_tag">NEW PRODUCT</p>' : ''} 
         <h2 class="produto_category_name">${objeto.name}</h2>
