@@ -306,7 +306,6 @@ a {
 }
 
 .zx9_details_container {
-  border: 1px solid rgb(27, 68, 179);
   display: grid;
 }
 
@@ -563,6 +562,11 @@ li a {
     height: 320px;
   }
 
+  .yx1_details_container {
+    padding-left: 25px;
+    padding-top: 101px;
+  }
+
   /* todo ----------- Container propaganda */
   .container_propaganda {
     width: 689px;
@@ -582,10 +586,38 @@ li a {
     height: 320px;
   }
 
+  .zx7_container .product_name {
+    left: 95px;
+  }
+
+  .zx7_container .botao_ver_produto {
+    left: 95px;
+  }
+
   /* todo ------------ Footer  */
   footer {
+    align-items: flex-start;
     width: 768px;
     height: 400px;
+    padding: 60px 40px 468px 39px;
+    position: relative;
+  }
+
+  footer ul {
+    display: flex;
+    column-gap: 34px;
+  }
+
+  .footer_text {
+    text-align: left;
+    margin: 32px 0 80px 0;
+    max-width: 689px;
+  }
+
+  .social_icons_container {
+    position: absolute;
+    bottom: 46px;
+    right: 40px;
   }
 }
 
@@ -652,8 +684,40 @@ li a {
   }
 
   .zx9_details_container {
-    border: 1px solid rgb(27, 68, 179);
-    display: grid;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 95px;
+    top: 133px;
+  }
+
+  .zx9_img {
+    width: 410px;
+    height: 493px;
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+  }
+
+  .pattern_img {
+    position: absolute;
+    width: 1000px;
+    top: -60px;
+    left: -180px;
+  }
+
+  .zx9_title {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .product_details {
+    text-align: left;
+  }
+
+  .zx9_container .botao_ver_produto {
+    margin-left: 0;
   }
 
   /* todo ----------- Container zx7 */
@@ -679,6 +743,8 @@ li a {
   .yx1_details_container {
     width: 540px;
     height: 320px;
+    padding-left: 60px;
+    padding-top: 101px;
   }
 
   /* todo == propaganda -------------- */
@@ -729,5 +795,33 @@ li a {
   footer {
     width: 1440px;
     height: 365px;
+    padding: 75px 165px 48px 165px;
+  }
+
+  footer ul {
+    position: absolute;
+    top: 75px;
+    right: 165px;
+  }
+
+  .social_icons_container {
+    position: absolute;
+    bottom: 138.25px;
+    right: 165px;
+  }
+
+  .footer_logo {
+    margin-bottom: 36px;
+  }
+
+  .footer_text {
+    max-width: 540px;
+    margin-top: 0;
+  }
+
+  .copyright_text {
+    position: absolute;
+    bottom: 49px;
+    left: 165px;
   }
 } ;
