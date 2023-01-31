@@ -263,6 +263,8 @@ a {
   flex-direction: column;
   background: #d87d4a;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
 .zx9_title {
@@ -277,10 +279,14 @@ a {
   margin: 55px auto 0 auto;
   width: 172px;
   height: 207px;
+  z-index: 2;
 }
 
 .pattern_img {
   position: absolute;
+  left: -170px;
+  top: -180px;
+  width: 670px;
 }
 
 .product_details {
@@ -297,6 +303,11 @@ a {
 
 .zx9_container .botao_ver_produto {
   margin: 39px auto 0 auto;
+}
+
+.zx9_details_container {
+  border: 1px solid rgb(27, 68, 179);
+  display: grid;
 }
 
 /* ! zx7 container --------------------------------------------------- */
@@ -521,6 +532,37 @@ li a {
     margin-top: 40px;
   }
 
+  .pattern_img {
+    position: absolute;
+    left: -50px;
+    top: -210px;
+    width: 800px;
+  }
+
+  .zx9_img {
+    width: 192.21px;
+    height: 237px;
+  }
+
+  /* todo ----------------------- YX1 Container  */
+
+  .yx1_container {
+    width: 689px;
+    height: 320px;
+    display: flex;
+    column-gap: 11px;
+  }
+
+  .product_img_container {
+    width: 339px;
+    height: 320px;
+  }
+
+  .yx1_details_container {
+    width: 339px;
+    height: 320px;
+  }
+
   /* todo ----------- Container propaganda */
   .container_propaganda {
     width: 689px;
@@ -532,6 +574,18 @@ li a {
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  /* todo ----------- Container zx7 */
+  .zx7_container {
+    width: 689px;
+    height: 320px;
+  }
+
+  /* todo ------------ Footer  */
+  footer {
+    width: 768px;
+    height: 400px;
   }
 }
 
@@ -588,9 +642,47 @@ li a {
   .product_class {
     font-size: 18px;
   }
+
+  /* todo ----------------------- ZX9 speaker */
+  .zx9_container {
+    width: 1110px;
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .zx9_details_container {
+    border: 1px solid rgb(27, 68, 179);
+    display: grid;
+  }
+
+  /* todo ----------- Container zx7 */
+  .zx7_container {
+    width: 1110px;
+    height: 320px;
+  }
+
+  /* todo ----------------------- YX1 Container  */
+
+  .yx1_container {
+    width: 1110px;
+    height: 320px;
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .product_img_container {
+    width: 540px;
+    height: 320px;
+  }
+
+  .yx1_details_container {
+    width: 540px;
+    height: 320px;
+  }
+
   /* todo == propaganda -------------- */
   .container_propaganda {
-    border: 1px solid red;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -631,5 +723,11 @@ li a {
 
   a:hover {
     color: #d87d4a;
+  }
+
+  /* todo ------------ Footer  */
+  footer {
+    width: 1440px;
+    height: 365px;
   }
 } ;
