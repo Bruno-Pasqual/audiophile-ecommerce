@@ -115,7 +115,8 @@ header {
   place-content: center;
   background-image: url('./assets//home//mobile/image-header.jpg');
   background-size: cover;
-  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-y: -50px;
   position: relative;
 }
 
@@ -252,6 +253,12 @@ a {
   margin-top: 17px;
 }
 
+.product_img.speakers_container {
+  background-image: url('./assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 /* ! ZX9 speaker ----------------------------------- */
 
 .zx9_container {
@@ -320,6 +327,7 @@ a {
   background-image: url('./assets/home/mobile/image-speaker-zx7.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .product_name {
@@ -359,7 +367,7 @@ a {
   background-image: url('./assets//home/mobile/image-earphones-yx1.jpg');
   background-position: center;
   background-size: cover;
-  /* background: #f1f1f1; */
+  background-repeat: no-repeat;
   border-radius: 8px;
 }
 
@@ -401,6 +409,7 @@ a {
   background-image: url('./assets/shared/mobile/image-best-gear.jpg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .texto-destaque {
@@ -422,7 +431,6 @@ a {
 footer {
   width: 375px;
   height: 654px;
-  border: 1px solid red;
   padding: 52px 0 38px 0;
   display: flex;
   flex-direction: column;
@@ -482,8 +490,8 @@ li a {
 
   header {
     height: 729px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('/assets/home/tablet/image-header.jpg');
+    background-position-y: 0px;
   }
 
   .caixa_de_informacoes {
@@ -541,6 +549,7 @@ li a {
   .zx9_img {
     width: 192.21px;
     height: 237px;
+    content: url(./assets/home/tablet/image-speaker-zx9.png);
   }
 
   /* todo ----------------------- YX1 Container  */
@@ -555,6 +564,7 @@ li a {
   .product_img_container {
     width: 339px;
     height: 320px;
+    background-image: url('./assets/home/tablet/image-earphones-yx1.jpg');
   }
 
   .yx1_details_container {
@@ -576,14 +586,14 @@ li a {
   .imagem_propaganda_container {
     width: 689px;
     height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('./assets/shared/tablet/image-best-gear.jpg');
   }
 
   /* todo ----------- Container zx7 */
   .zx7_container {
     width: 689px;
     height: 320px;
+    background-image: url('./assets/home/tablet/image-speaker-zx7.jpg');
   }
 
   .zx7_container .product_name {
@@ -630,6 +640,7 @@ li a {
 
   header {
     background-position-y: -50px;
+    background-image: url('./assets/home/desktop/image-hero.jpg');
   }
 
   nav {
@@ -693,6 +704,7 @@ li a {
   }
 
   .zx9_img {
+    content: url('./assets/home/desktop/image-speaker-zx9.png');
     width: 410px;
     height: 493px;
     position: absolute;
@@ -724,6 +736,7 @@ li a {
   .zx7_container {
     width: 1110px;
     height: 320px;
+    background-image: url('./assets/home/desktop/image-speaker-zx7.jpg');
   }
 
   /* todo ----------------------- YX1 Container  */
@@ -738,6 +751,7 @@ li a {
   .product_img_container {
     width: 540px;
     height: 320px;
+    background-image: url('./assets/home/desktop/image-earphones-yx1.jpg');
   }
 
   .yx1_details_container {
@@ -760,7 +774,7 @@ li a {
   .imagem_propaganda_container {
     width: 540px;
     height: 588px;
-    background-position: center;
+    background-image: url('./assets/shared/desktop/image-best-gear.jpg');
   }
 
   .container_textos_propaganda {
