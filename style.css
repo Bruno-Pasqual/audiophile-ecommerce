@@ -161,7 +161,8 @@ header > * {
   margin-bottom: 28px;
 }
 
-.botao_ver_produto {
+.botao_ver_produto,
+.botao_add_cart {
   width: 160px;
   height: 48px;
   border: none;
@@ -587,6 +588,90 @@ li a {
 
 .category_img_container.yx1-earphones {
   background-image: url('./assets/product-yx1-earphones/mobile/image-product.jpg');
+}
+
+/* ! Product buy container ======================================= */
+
+.product_picture_container {
+  width: 327px;
+  height: 327px;
+  outline: 1px solid red;
+  margin: 0 auto;
+}
+
+.product_name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 327px;
+  margin: 24px auto;
+}
+
+.product_description {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 327px;
+  margin: 0 auto;
+}
+
+.product_price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 24px 0 31px 24px;
+}
+
+/* quantity container */
+.quantity_container {
+  display: flex;
+  outline: 1px solid red;
+  width: 296px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.quantity_box {
+  display: flex;
+  background: #f1f1f1;
+}
+
+.quantity-button {
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border: none;
+}
+
+.minus_button {
+  margin: 15px 20px 15px 15.5px;
+}
+
+.plus_button {
+  margin: 15px 15px 15.5px 21px;
+}
+
+.product_quantity {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: black;
 }
 
 /* ! ================== Media queries ============================ */
