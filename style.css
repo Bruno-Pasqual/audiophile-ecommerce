@@ -577,6 +577,14 @@ li a {
   background-image: url('./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg');
 }
 
+.product_img.zx7-speaker {
+  background-image: url('./assets/product-zx7-speaker/mobile/image-product.jpg');
+}
+
+.product_img.zx9-speaker {
+  background-image: url('./assets/product-zx9-speaker/mobile/image-product.jpg');
+}
+
 /* ! ================== Media queries ============================ */
 
 @media (min-width: 768px) {
@@ -975,6 +983,10 @@ li a {
     margin-right: 160px;
   }
 
+  .category_product_details {
+    text-align: left;
+  }
+
   a:hover {
     color: #d87d4a;
   }
@@ -1017,21 +1029,27 @@ li a {
 
   .container_produtos_categoria {
     width: 1110px;
-    border: 1px solid blue;
     /* height: 560px; */
   }
 
   .category_card_container {
     display: flex;
     width: 1110px;
-
-    align-items: center;
+    height: 560px;
     column-gap: 220px;
+  }
+
+  .category_card_container:nth-child(2n) {
+    flex-direction: row-reverse;
   }
 
   .category_details_container {
     width: 445px;
     height: 343px;
+    display: flex;
+    justify-content: center;
+    height: 560px;
+    align-items: flex-start;
   }
 
   .pai_imagem_category {
