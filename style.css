@@ -630,13 +630,13 @@ li a {
   margin: 24px 0 31px 24px;
 }
 
-/* quantity container */
+/* quantity container ------------- */
 .quantity_container {
   display: flex;
-  outline: 1px solid red;
   width: 296px;
   height: 48px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .quantity_box {
@@ -672,6 +672,92 @@ li a {
   text-transform: uppercase;
   margin: 15px 0;
   color: black;
+}
+
+.features_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.857143px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 88px 0 24px 24px;
+}
+
+.features_text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 0.5;
+  width: 327px;
+  margin: 0 auto;
+}
+
+/* ! Gallery container ----------------------------------------- */
+
+.gallery_container {
+  width: 327px;
+  height: 756px;
+  margin: 89px auto 120px auto;
+  border: 1px solid lightcoral;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.gallery_img1,
+.gallery_img2 {
+  width: 327px;
+  height: 174px;
+  border-radius: 8px;
+  border: 1px solid red;
+}
+.gallery_img3 {
+  width: 327px;
+  height: 368px;
+  border-radius: 8px;
+  border: 1px solid red;
+}
+
+/* ! Also like container ---------------------------------------- */
+
+.also_like_container {
+  width: 327px;
+  height: 983px;
+  border: 1px solid lightblue;
+  margin: 120px auto;
+}
+
+.also_like_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.857143px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.also_like_card {
+  width: 327px;
+  height: 265px;
+}
+
+.also_card_img {
+  width: 327px;
+  height: 120px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  display: grid;
+  place-content: center;
+}
+
+.also_card_img img {
+  max-height: 95px;
+  max-width: 79.58px;
+  border: 1px solid lightcyan;
 }
 
 /* ! ================== Media queries ============================ */
