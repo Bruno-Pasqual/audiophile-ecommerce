@@ -43,18 +43,103 @@
 
     <!-- Main -->
     <main>
-      <h1>CHECKOUT</h1>
-      <p class="sub-title">Billing details</p>
-      <div class="first-row">
-        <div class="left_box">
-          <label for="name_input">Name</label>
-          <input type="text" name="name_input" id="name_input" />
+      <form action="">
+        <h1>CHECKOUT</h1>
+        <p class="sub-title">Billing details</p>
+
+        <!-- First row -->
+        <div class="first-row">
+          <div class="left_box">
+            <label for="name_input">Name</label>
+            <input
+              type="text"
+              name="name_input"
+              id="name_input"
+              placeholder="Alexei Ward"
+            />
+          </div>
+          <div class="right-box">
+            <label for="email_box">Email Address</label>
+            <input
+              type="text"
+              name="email_input"
+              id="email_input"
+              placeholder="alexeiward@mail.com"
+            />
+          </div>
         </div>
-        <div class="right-box">
-          <label for="email_box">Email Address</label>
-          <input type="text" name="email_input" id="email_input" />
+        <!-- First row -->
+
+        <!-- Phone Container -->
+        <div class="phone_container">
+          <label for="phone_number">Phone Number</label>
+          <input
+            type="number"
+            id="phone_number_input"
+            placeholder="+1 202-555-0136"
+          />
         </div>
-      </div>
+        <!-- Phone Container -->
+
+        <!-- ----------- shipping info ------- -->
+        <div class="shipping_info_container">
+          <p class="sub-title">SHIPPING INFO</p>
+
+          <!-- Container endereço -->
+          <div class="container_endereco">
+            <label for="endereco_input">Your Address</label>
+            <input type="text" name="endereco_input" id="endereco_input" />
+          </div>
+          <!-- Container endereço -->
+
+          <!-- ===  Second row === -->
+
+          <div class="second_row">
+            <!-- zip_code_container -->
+            <div class="zip_code_container">
+              <label for="zip_code_input">ZIP Code</label>
+              <input type="number" id="zip_code_input" placeholder="10001" />
+            </div>
+            <!-- zip_code_container -->
+            <div class="city_container">
+              <label for="city_input">City</label>
+              <input
+                type="text"
+                name="city_input"
+                id="city_input"
+                placeholder="New York"
+              />
+            </div>
+          </div>
+          <!-- ===  Second row === -->
+
+          <!-- Country container -->
+          <div class="country_container">
+            <label for="country_input">Country</label>
+            <input type="text" name="country_input" id="country_input" />
+          </div>
+          <!-- Country container -->
+        </div>
+        <!-- ----------- shipping info ------- -->
+
+        <!-- ======= container payment ======= -->
+        <div class="payment_details_container">
+          <p class="sub-title">Billing details</p>
+          <div class="payment_left_container">
+            <p class="">Payment Method</p>
+            <div class="e_money_container">
+              <label for="e_money_input">e-Money Number</label>
+              <input
+                type="number"
+                name="e_money_input"
+                id="e_money_input"
+                placeholder="238521993"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- ======= container payment ======= -->
+      </form>
     </main>
     <!-- Main -->
 
