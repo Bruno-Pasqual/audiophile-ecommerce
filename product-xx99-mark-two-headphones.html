@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Audiophile e-commerce website</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="container_lado_esquerdo">
+        <div class="menu_mobile">
+          <div class="menu_bar"></div>
+        </div>
+        <img src="./assets/shared/desktop/logo.svg" alt="" id="logo" />
+      </div>
+      <ul class="nav_list">
+        <li><a class="footer_link" href="index.html">HOME</a></li>
+        <li><a class="footer_link" href="headphones.html">HEADPHONES</a></li>
+        <li><a class="footer_link" href="speakers.html">SPEAKERS</a></li>
+        <li><a class="footer_link" href="earphones.html">EARPHONES</a></li>
+      </ul>
+
+      <img
+        src="./assets/shared/desktop/icon-cart.svg"
+        alt=""
+        id="carrinho_compra"
+      />
+    </nav>
+    <main>
+      <div class="product_card_container">
+        <a href="Go back" class="go_back_link"></a>
+        <!-- Header -->
+        <div class="header">
+          <div class="product_picture_container"></div>
+          <div class="lado_direito_container">
+            <p class="product_name">XX99 MARK II HEADPHONES</p>
+            <p class="product_description">
+              The new XX99 Mark II headphones is the pinnacle of pristine audio.
+              It redefines your premium headphone experience by reproducing the
+              balanced depth and precision of studio-quality sound.
+            </p>
+            <p class="product_price">$ 2,999</p>
+            <div class="quantity_container">
+              <div class="quantity_box">
+                <button class="quantity-button minus_button">-</button>
+                <p class="product_quantity">0</p>
+                <button class="plus_button quantity-button">+</button>
+              </div>
+              <button class="botao_add_cart laranja">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <!-- Header -->
+
+        <!-- body -->
+        <div class="body">
+          <div class="features_container">
+            <p class="features_title">Features</p>
+            <p class="features_text">
+              Featuring a genuine leather head strap and premium earcups, these
+              headphones deliver superior comfort for those who like to enjoy
+              endless listening. It includes intuitive controls designed for any
+              situation. Whether you’re taking a business call or just in your
+              own personal space, the auto on/off and pause features ensure that
+              you’ll never miss a beat. The advanced Active Noise Cancellation
+              with built-in equalizer allow you to experience your audio world
+              on your terms. It lets you enjoy your audio in peace, but quickly
+              interact with your surroundings when you need to. Combined with
+              Bluetooth 5. 0 compliant connectivity and 17 hour battery life,
+              the XX99 Mark II headphones gives you superior sound, cutting-edge
+              technology, and a modern design aesthetic.
+            </p>
+          </div>
+          <div class="in_the_box_container">
+            <p class="sub_title">IN THE BOX</p>
+            <ul class="in_the_box_list">
+              <li>
+                <span class="quantity">1x</span>
+                <span class="item_name">Headphone Unit</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- body -->
+
+        <!-- Gallery -->
+        <div class="gallery_container">
+          <div class="gallery_img1"></div>
+          <div class="gallery_img2"></div>
+          <div class="gallery_img3"></div>
+        </div>
+        <!-- Gallery -->
+
+        <!-- also like container -->
+        <div class="also_like_container">
+          <p class="also_like_title">YOU MAY ALSO LIKE</p>
+          <div class="also_like_card">
+            <div class="also_card_img">
+              <img src="./assets/" alt="" />
+            </div>
+            <p class="also_card_name">XX99 MARK II</p>
+            <button class="see_product laranja"></button>
+          </div>
+        </div>
+
+        <!-- also like container -->
+      </div>
+
+      <section id="primeiros_produtos_container">
+        <!-- card -->
+        <div class="primeiro_produto_card">
+          <div class="product_img headphones"></div>
+          <p class="product_class">Headphones</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- card -->
+
+        <!-- card -->
+        <div class="primeiro_produto_card speakers">
+          <div class="product_img speakers_container"></div>
+          <p class="product_class">SPEAKERS</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- card -->
+
+        <!-- card -->
+        <div class="primeiro_produto_card">
+          <div class="product_img earphones"></div>
+          <p class="product_class">EARPHONES</p>
+          <div class="link_container">
+            <a href="#">SHOP</a>
+            <img
+              src="./assets/shared/desktop/icon-arrow-right.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+        <!-- card -->
+      </section>
+      <section class="container_propaganda">
+        <div class="imagem_propaganda_container"></div>
+        <div class="container_textos_propaganda">
+          <p class="container_title">
+            BRINGING YOU THE <span class="texto-destaque">BEST</span> AUDIO GEAR
+          </p>
+          <p class="text_propaganda">
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="footer_logo" src="./assets/shared/desktop/logo.svg" alt="" />
+      <ul class="footer_list">
+        <li><a class="footer_link" href="#">HOME</a></li>
+        <li><a class="footer_link" href="#">HEADPHONES</a></li>
+        <li><a class="footer_link" href="#">SPEAKERS</a></li>
+        <li><a class="footer_link" href="#">EARPHONES</a></li>
+      </ul>
+      <p class="footer_text">
+        Audiophile is an all in one stop to fulfill your audio needs. We're a
+        small team of music lovers and sound specialists who are devoted to
+        helping you get the most out of personal audio. Come and visit our demo
+        facility - we’re open 7 days a week.
+      </p>
+      <p class="copyright_text">Copyright 2021. All Rights Reserved</p>
+      <div class="social_icons_container">
+        <img src="./assets/shared/desktop/icon-facebook.svg" alt="" />
+        <img src="./assets/shared/desktop/icon-twitter.svg" alt="" />
+        <img src="./assets/shared/desktop/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
+
+    <script src="./scripts/product.js"></script>
+  </body>
+</html>
+
+<!-- Home
+Headphones
+Speakers
+Earphones
+
+Go back
+
+New product
+
+XX99 Mark II Headphones
+The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your 
+premium headphone experience by reproducing the balanced depth and precision of 
+studio-quality sound.
+
+$2,999
+1
+Add to cart
+
+Features
+Featuring a genuine leather head strap and premium earcups, these headphones deliver superior 
+comfort for those who like to enjoy endless listening. It includes intuitive controls designed 
+for any situation. Whether you’re taking a business call or just in your own personal space, the 
+auto on/off and pause features ensure that you’ll never miss a beat.
+
+The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio 
+world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings 
+when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the 
+XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.
+
+In the box
+
+1x Headphone unit
+2x Replacement earcups
+1x User manual
+1x 3.5mm 5m audio cable
+1x Travel bag
+
+You may also like
+
+XX99 Mark I
+See product
+
+XX59
+See product
+
+ZX9 speaker
+See product
+
+Headphones
+Shop
+
+Speakers
+Shop
+
+Earphones
+Shop
+
+Bringing you the best audio gear
+Located at the heart of New York City, Audiophile is the premier store for high end headphones,
+earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
+rooms available for you to browse and experience a wide range of our products. Stop by our store
+to meet some of the fantastic people who make Audiophile the best place to buy your portable
+audio equipment.
+
+Home
+Headphones
+Speakers
+Earphones
+
+Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
+and sound specialists who are devoted to helping you get the most out of personal audio. Come and
+visit our demo facility - we’re open 7 days a week.
+
+Copyright 2021. All Rights Reserved -->
