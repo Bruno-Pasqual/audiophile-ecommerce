@@ -595,8 +595,11 @@ li a {
 .product_picture_container {
   width: 327px;
   height: 327px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 0 auto;
+  background-image: url('./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .product_name {
@@ -700,24 +703,20 @@ li a {
   width: 327px;
   height: 756px;
   margin: 89px auto 120px auto;
-  border: 1px solid lightcoral;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.gallery_img1,
-.gallery_img2 {
+.gallery_img {
   width: 327px;
   height: 174px;
   border-radius: 8px;
-  border: 1px solid red;
 }
-.gallery_img3 {
+.gallery_img:last-child {
   width: 327px;
   height: 368px;
   border-radius: 8px;
-  border: 1px solid red;
 }
 
 /* ! Also like container ---------------------------------------- */
@@ -743,6 +742,22 @@ li a {
 .also_like_card {
   width: 327px;
   height: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.also_like_card button {
+}
+
+.also_card_name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  margin: 32px 0;
+  color: #000000;
 }
 
 .also_card_img {
@@ -755,8 +770,7 @@ li a {
 }
 
 .also_card_img img {
-  max-height: 95px;
-  max-width: 79.58px;
+  height: 95px;
   border: 1px solid lightcyan;
 }
 
@@ -845,8 +859,15 @@ label {
   border-radius: 50%;
   outline: 1px solid #cfcfcf;
   outline-offset: 5px;
-
   cursor: pointer;
+}
+
+.cash_on_devlivery {
+  margin-top: 16px;
+}
+
+.fourth_row_left {
+  margin-top: 32px;
 }
 
 .circulo_check.ativo {
