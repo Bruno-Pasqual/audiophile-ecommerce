@@ -745,6 +745,7 @@ li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .also_like_card button {
@@ -772,6 +773,14 @@ li a {
 .also_card_img img {
   height: 95px;
   border: 1px solid lightcyan;
+}
+
+.also_like_card a {
+  background: #d87d4a;
+  opacity: 1;
+  display: grid;
+  place-content: center;
+  color: white;
 }
 
 /* ! Form Container ------------------------------------------------- */
@@ -877,6 +886,67 @@ label {
 /* ! ================== Media queries ============================ */
 
 @media (min-width: 768px) {
+  /* ! Gallery --------------- */
+
+  .gallery_container {
+    width: 690px;
+    height: 368px;
+    border: 1px solid lightblue;
+    flex-direction: row;
+  }
+
+  .lado_esquerdo_galeria {
+    border: 1px solid red;
+    width: 277px;
+    height: 368px;
+  }
+
+  .gallery_img {
+    width: 277px;
+    height: 174px;
+  }
+  /* ! Gallery --------------- */
+
+  /* ! Also like ------------- */
+
+  body {
+    width: 768px;
+  }
+
+  .also_like_container {
+    width: 691px;
+    height: 563px;
+    position: relative;
+  }
+
+  .cards_also_container {
+    width: 691px;
+    height: 471px;
+    display: flex;
+    column-gap: 11px;
+  }
+
+  .also_like_card {
+    width: 223px;
+    height: 471px;
+  }
+
+  .also_card_img {
+    width: 223px;
+    height: 318px;
+  }
+
+  .also_card_img img {
+    width: 148px;
+    height: 193px;
+  }
+
+  .also_card_img img:first-child {
+    source: './assets/product-xx99-mark-one-headphones/tablet/image-product.jpg';
+  }
+
+  /* ! Also like ------------- */
+
   body {
     width: 768px;
   }
@@ -1100,6 +1170,34 @@ label {
 /* ! ================== Media queries ============================ */
 
 @media (min-width: 1445px) {
+  /* ! Also like container ------ */
+
+  .also_like_container {
+    width: 1110px;
+    height: 571px;
+  }
+
+  .cards_also_container {
+    width: 1110px;
+    height: 471px;
+    column-gap: 30px;
+  }
+
+  .also_like_card {
+    width: 350px;
+    height: 471px;
+  }
+
+  .also_card_img {
+    width: 350px;
+    height: 318px;
+  }
+
+  .also_card_img img {
+    width: 175px;
+    height: 194px;
+  }
+
   body {
     width: 1440px;
   }

@@ -13,7 +13,9 @@ fetch('./data.json')
   .then((json) => {
     dados = json;
   })
-  .then(() => {});
+  .then(() => {
+    console.log(dados);
+  });
 
 const imgs = document.querySelectorAll('.gallery_img');
 imgs.forEach((img, index) => {
