@@ -592,6 +592,10 @@ li a {
 
 /* ! Product buy container ======================================= */
 
+.go_back_link {
+  margin-left: 24px;
+}
+
 .product_picture_container {
   width: 327px;
   height: 327px;
@@ -600,6 +604,7 @@ li a {
   background-image: url('./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg');
   background-position: center;
   background-size: cover;
+  margin: 24px auto;
 }
 
 .product_name {
@@ -638,7 +643,7 @@ li a {
   display: flex;
   width: 296px;
   height: 48px;
-  margin: 0 auto;
+  margin-left: 24px;
   justify-content: space-between;
 }
 
@@ -729,7 +734,6 @@ li a {
 .also_like_container {
   width: 327px;
   height: 983px;
-  border: 1px solid lightblue;
   margin: 120px auto;
 }
 
